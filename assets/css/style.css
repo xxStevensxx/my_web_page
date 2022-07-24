@@ -1,0 +1,343 @@
+@import url('http://fonts.cdnfonts.com/css/games');
+
+
+:root{
+  --custom-black : #252423;
+  --custom-green : #18FF74;
+  --custom-orange :#FF8D40;
+  --custom-turquoise : #61C3FF;
+  --custom-purple : #8453E3;
+  --custom-pink : #FB89FB;
+  --white-color :#FFFFFF;
+  --custom-blue : #2979FF;
+  --java-color : #3A75B0;
+  --thymleaf-color: #005F0F;
+  --php-color : #8892BF;
+  --apache-color : #FAF7ED;
+  --docker-color : #002C66;
+  --matrix-green : #1A6F20;
+  }
+
+*{
+  font-family: 'Games', sans-serif;
+}
+
+html, body{
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* background-color: var(--custom-black); */
+}
+
+body{
+  background-color: var(--custom-black)  ;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  transition: all 200ms;
+  will-change: background;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+#navbar{
+  height: 100%;
+  width: 100%;
+  padding: 0.5%;
+  margin: 0;
+  display: grid;
+  color: white;
+  background-color: var(--custom-black) !important;
+  grid-template-columns: repeat(6, 1fr);
+
+}
+
+#navbar li {
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+  padding: 5%;
+  list-style: none;
+}
+
+#navbar a{
+  position: relative;
+  top: 10%;
+  text-decoration: none;
+  color: white;
+}
+
+#a_propos:hover{
+  transition: linear 1s;
+  background-color: var(--custom-purple);
+}
+
+#skill:hover{
+  transition: linear 1s;
+  background-color: var(--custom-pink);
+}
+
+#experiences:hover{
+  transition: linear 1s;
+  background-color: var(--custom-turquoise);
+}
+
+#projet:hover{
+  transition: linear 1s;
+  background-color: var(--custom-orange);
+}
+
+/* ******************* page d'acceuil avec le letterize.js ********************** */
+
+#welcome_page{
+  background-color: var(--custom-black);
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Khula", sans-serif;
+  height: 100vh;
+  box-sizing: border-box;
+  letter-spacing: 6px;
+  margin: 0;
+  line-height: 1.2;
+
+  position: absolute;
+  top: 0px;
+  background-color: var(--custom-black);
+  height: 100% ;
+  width: 100% ;
+}
+
+span {
+  display: inline-block;
+}
+
+#welcome_page div{
+  position: relative;
+}
+
+.welcome_msg{
+  text-align: center;
+  color: var(--matrix-green);
+  font-size: 1em;
+}
+
+#welcome_msg_blue{
+  color: var(--custom-blue);
+  text-decoration: none;
+}
+
+.message{
+  position: relative;
+  top: 45%;
+  color: var(--white-color);
+  font-size: 70px;
+  text-align:  center;
+}
+
+/* ******************* section one *********************** */
+#section_one{
+  display: none;
+  grid-template-columns: 1fr 1fr;
+}
+
+#left{
+  width: 100%;
+  height: 80vh;
+}
+
+#chevron{
+  position: absolute;
+  top: 0.5em;
+  left: 2.5em;
+}
+
+#chevron {
+  color: var(--custom-purple);
+  animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+#triangle_bot_left_shape{
+  position: absolute;
+  left: -1000px;
+  border-bottom: 80vh solid var(--custom-purple);
+  border-right: 100vh solid transparent;
+}
+
+#right{
+  width: 100%;
+  height: 80vh;
+  /* background-color: var(--custom-purple); */
+  }
+
+#right_desc_about_me{
+  color: var(--custom-purple);
+  width: 34%;
+  height: 80vh;
+  position: absolute;
+  left: 2000px;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#right_desc_about_me p{
+  position: relative;
+  right: 40%;
+}
+
+/* ******************* section two ************************* */
+
+#section_two{
+  display: none;
+  grid-template-columns: 1fr 1fr;
+}
+
+#left_skill{
+  width: 100%;
+  height: 80vh;
+}
+
+#all_my_skills_left{
+  color: var(--custom-pink);
+  width: 34%;
+  height: 80vh;
+  position: absolute;
+  left: 250px;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.ldBar.label-center{
+  font-size: 60px;
+}
+
+#right_skill{
+width: 100%;
+height: 80vh;
+}
+
+#triangle_top_right_shape {
+
+      position: absolute;
+      left: 82.8%;
+      border-top: 85vh solid var(--custom-pink);
+      border-left: 80vh solid transparent;
+    }
+/* ************************* section_three ************************ */
+#section_three{
+  display: none;
+  grid-column: 1fr;
+  /* visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 3s, opacity 3s; */
+
+}
+
+#center{
+  width: 100%;
+  height: 80vh;
+}
+
+.horizontal-timeline .items {
+border-top: 3px solid #e9ecef;
+}
+
+.horizontal-timeline .items .items-list {
+display: block;
+position: relative;
+text-align: center;
+padding-top: 70px;
+margin-right: 0;
+}
+
+.horizontal-timeline .items .items-list:before {
+content: "";
+position: absolute;
+height: 36px;
+border-right: 2px dashed #dee2e6;
+top: 0;
+}
+
+.horizontal-timeline .items .items-list .event-date {
+position: absolute;
+top: 36px;
+left: 0;
+right: 0;
+width: 75px;
+margin: 0 auto;
+font-size: .9rem;
+padding-top: 8px;
+}
+
+@media (min-width: 1140px) {
+.horizontal-timeline .items .items-list {
+display: inline-block;
+width: 24%;
+padding-top: 45px;
+}
+
+.horizontal-timeline .items .items-list .event-date {
+top: -40px;
+}
+
+.text-muted{
+  color: var(--custom-turquoise);
+
+}
+
+/* ************************* section_four ************************ */
+
+#section_four{
+  display: none;
+  grid-template-columns: 1fr;
+}
+
+#carousel{
+  width: 100%;
+  height: 80vh;
+}
+
+.carousel-item.active{
+  width: 100%;
+  height: 70vh;
+}
+
+.carousel-caption.d-none.d-md-block{
+  color: var(--custom-orange);
+}
+
+
+    /* ******************* footer ************************* */
+
+
+#footer{
+  background-color: var(--custom-black) ;
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width:100%;
+
+}
