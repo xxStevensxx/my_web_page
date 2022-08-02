@@ -3,6 +3,12 @@ var info_section = 0;
 var oldSection = 0;
 var targets = [];
 var targetToUse = [];
+
+// *********************** init poppover **********************
+
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+
 // ******************** cancel function ********************
 
 function cancel(oldSection, section, targets) {
