@@ -20,6 +20,15 @@
   --green-exp : #198754;
   --red-exp : #DC3545;
   --yellow-exp : #FFC107;
+  --custom-bootstrap : #7430F9;
+  --custom-html : #E14B25;
+  --custom_css : #156FB3;
+  --custom-java : #4D90B6;
+  --green-thymlf : #005C0E;
+  --blue-docker : #00AFDC;
+  --blue-php : #878EB9;
+  --yellow-tomcat : #CD9F1D;
+  --blue-api : #3C47C6;
   }
 
 *{
@@ -217,19 +226,21 @@ span {
 }
 
 #left_skill{
+  display: grid;
   width: 100%;
   height: 80vh;
 }
 
 #all_my_skills_left{
   color: var(--custom-pink);
-  width: 34%;
+  width: 90%;
   height: 80vh;
-  position: absolute;
-  left: 250px;
+  position: relative;
+  right: 10%;
 
   text-align: center;
-  display: flex;
+  display: grid;
+  grid-template-columns: 4fr 4fr;
   justify-content: center;
   align-items: center;
 
@@ -266,18 +277,90 @@ height: 80vh;
 }
 
 .progress-value {
-  animation: load 3s normal forwards;
   box-shadow: 0 10px 40px -10px #fff;
   border-radius: 100px;
-  background: #fff;
   height: 30px;
   width: 0;
 }
 
-@keyframes load {
-  0% { width: 0; }
-  100% { width: 68%; }
+#prgr_html{
+  animation: load_heighty 3s normal forwards;
+  background: var(--custom-html);
 }
+
+#prgr_api{
+  animation: load_sixtyFive 3s normal forwards;
+  background: var(--blue-api);
+}
+
+#prgr_js{
+  animation: load_sixtyFive 3s normal forwards;
+  background: var(--yellow-exp);
+}
+
+#prgr_java{
+  animation: load_heighty 3s normal forwards;
+  background: var(--custom-java);
+}
+
+#prgr_thmlf{
+  animation: load_seventyFive 3s normal forwards;
+  background: var(--green-thymlf);
+}
+
+#prgr_docker{
+  animation: load_fourtyFive 3s normal forwards;
+  background: var(--blue-docker);
+}
+
+#prgr_sql{
+  animation: load_sixtyFive 3s normal forwards;
+  background: var(--blue-php);
+}
+
+#prgr_srv{
+  animation: load_sixtyFive 3s normal forwards;
+  background: var(--yellow-tomcat);
+}
+
+label{
+  color: var(--custom-black);
+  position: absolute;
+  left: 20%;
+  z-index: 99;
+  font-size: 2em;
+}
+
+@keyframes load_sixty {
+  0% { width: 0; }
+  100% { width: 60%; }
+}
+
+@keyframes load_sixtyFive {
+  0% { width: 0; }
+  100% { width: 65%; }
+}
+
+@keyframes load_heighty {
+  0% { width: 0; }
+  100% { width: 80%; }
+}
+
+@keyframes load_seventyFive {
+  0% { width: 0; }
+  100% { width: 75%; }
+}
+
+@keyframes load_fourtyFive {
+  0% { width: 0; }
+  100% { width: 45%; }
+}
+
+@keyframes load_fifty {
+  0% { width: 0; }
+  100% { width: 50%; }
+}
+
 /* ************************* section_three ************************ */
 #section_three{
   display: none;
