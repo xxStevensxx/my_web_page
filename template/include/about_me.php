@@ -6,8 +6,10 @@
   </div>
   <div id="right">
     <div id="right_desc_about_me">
-      <p>Fort de mon parcours atypique j’ai commencé ma reconversion à 22 ans, diplômé récemment sur un parcours qui m’a fortement plus.
-          Je suis à la recherche d’un poste de développeur junior Java, où je pourrais m’épanouir, aiguiser mes compétences et apporter mon savoir-faire à votre entreprise</p>
+      <p>Fort de mon parcours atypique, diplome récemment sur un parcours qui m’a fortement plus.<br>
+        J'ai creer ce site afin de partager mes experiences professionnelles et personnelles avec vous<br>
+        J'espere que vous aprecierez la visite.<br>😁😁
+          </p>
     </div>
   </div>
 </div>

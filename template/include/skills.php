@@ -53,5 +53,9 @@
   </div>
   <div id="right_skill">
     <div id="triangle_top_right_shape"></div>
+    <div id="right_desc_skill">
+      <p>Voici une liste non exhaustive des Technos<br> que j'ai pu apprendre durant mes experiences<br>
+         et que je pauffine encore  aujourd'hui</p>
+    </div>
   </div>
 </div>
