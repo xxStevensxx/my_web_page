@@ -29,6 +29,7 @@
   --blue-php : #878EB9;
   --yellow-tomcat : #CD9F1D;
   --blue-api : #3C47C6;
+  --black-nebuleuse: #040100;
   }
 
 *{
@@ -495,25 +496,52 @@ top: -40px;
 
 #content_four{
   position: relative;
-  top: 15%;
+  top: 40%;
 }
 
 .figure-caption{
   color: var(--bs-white);
 }
 
-/* #carousel{
-  width: 100%;
-  height: 80vh;
+img {
+width: 180px;
+height: 180px;
+
+max-width: 180px;
+max-height: 180px;
 }
 
-.carousel-item.active{
-  width: 100%;
-  height: 70vh;
+
+img:hover{
+  background-color: var(--black-nebuleuse);
+  width: 180px;
+  height: 180px;
+  min-width: 180px;
+  max-height: 180px;
 }
 
-.carousel-caption.d-none.d-md-block{
-  color: var(--custom-orange);
+
+.custom-popover {
+  --bs-popover-max-width: 200px;
+  --bs-popover-border-color: var(--custom-orange);
+  --bs-popover-header-bg: var(--custom-orange);
+  --bs-popover-header-color: var(--bs-white);
+  --bs-popover-body-padding-x: 1rem;
+  --bs-popover-body-padding-y: .5rem;
+}
+
+
+/* .calque{
+  position: relative;
+  top: 99%;
+  left: 20%;
+  z-index: 1;
+  background-color: var(--black-nebuleuse);
+  opacity: 0.3;
+  width: 180px;
+  height: 180px;
+  min-width: 180px;
+  max-height: 180px;
 } */
 
 
