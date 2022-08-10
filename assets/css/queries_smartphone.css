@@ -1,4 +1,210 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+<<<<<<< Updated upstream
   /* Styles pour cette Media Queries */
   
+=======
+
+  /* ***************************** Navbar*************************************** */
+/* #navbar{
+  height: 100%;
+  width: 100%;
+  padding: 0.5%;
+  margin: 0;
+  display: grid;
+  color: white;
+  background-color: var(--custom-black) !important;
+  grid-template-columns: repeat(6, 1fr);
+} */
+
+  /* ******************* page d'acceuil avec le letterize.js ********************** */
+
+  #welcome_page{
+
+    font-size: 5vw;
+
+    font-family: "Khula", sans-serif;
+    height: 150vh;
+    letter-spacing: 6px;
+    margin: 0;
+    line-height: 1.2;
+
+    position: absolute;
+    top: 0px;
+    height: 100% ;
+    width: 100% ;
+  }
+
+  /* ******************* section one *********************** */
+
+  #section_one{
+    display: none;
+    /* grid-template-columns: 1fr 1fr; */
+  }
+
+  #left{
+    width: 100%;
+    height: 100%;
+  }
+
+  #chevron{
+    position: absolute;
+    top: 1.5em;
+    left: 2.5em;
+  }
+
+  #triangle_bot_left_shape{
+    position: absolute;
+    left: -1000px;
+    border-bottom: 80vh solid var(--custom-purple);
+    border-right: 75vh solid transparent;
+  }
+
+  #right{
+    width: 100%;
+    height: 100%;
+    /* background-color: var(--custom-purple); */
+    }
+
+  #right_desc_about_me{
+    color: var(--bs-white);
+    width: 34%;
+    height: 80vh;
+    position: absolute;
+    left: 1600px;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #right_desc_about_me p{
+    position: relative;
+    right: 85%;
+    font-size: 1.5em;
+    /* color: white; */
+  }
+
+
+  /* ******************* section two ************************* */
+
+  #section_two{
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+  }
+
+
+  #all_my_skills_left{
+    color: var(--custom-pink);
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    right: 45%;
+
+    text-align: center;
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .ldBar.label-center{
+    font-size: 60px;
+  }
+
+
+  #triangle_top_right_shape {
+
+        position: absolute;
+        left: 76.8%;
+        border-top: 85vh solid var(--custom-pink);
+        border-left: 35vh solid transparent;
+      }
+
+  #right_desc_skill{
+
+    font-size: 1.5em;
+
+  }
+
+
+  .progress {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 250px;
+  }
+
+  .progress-value {
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    height: 30px;
+    width: 0;
+  }
+
+  label{
+    color: var(--custom-black);
+    position: absolute;
+    left: 20%;
+    z-index: 99;
+    font-size: 1em;
+  }
+
+
+
+/* ************************* section_three ************************ */
+
+  .horizontal-timeline{
+    font-size: 1rem;
+    position: absolute;
+    top: 15%;
+    height: 30%;
+    width: 99%;
+  }
+
+  .horizontal-timeline .items .items-list .event-date {
+
+  font-size: 1rem;
+  }
+
+
+/* ************************* section_four ************************ */
+
+#section_four{
+    display: none;
+}
+
+
+#content_four{
+  position: relative;
+  top: 40%;
+}
+
+
+img {
+width: 180px;
+height: 180px;
+
+max-width: 180px;
+max-height: 180px;
+}
+
+  #footer{
+    background-color: var(--custom-black) ;
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width:100%;
+  }
+
+>>>>>>> Stashed changes
 }
