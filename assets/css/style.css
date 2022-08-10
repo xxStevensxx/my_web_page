@@ -122,7 +122,7 @@ body{
 
   position: absolute;
   top: 0px;
-  background-color: var(--custom-black);
+  /* background-color: var(--custom-black); */
   height: 100% ;
   width: 100% ;
 }
