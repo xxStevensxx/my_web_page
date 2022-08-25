@@ -1,39 +1,37 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
 
-  /* ***************************** Navbar*************************************** */
-/* #navbar{
-  height: 100%;
-  width: 100%;
-  padding: 0.5%;
-  margin: 0;
-  display: grid;
-  color: white;
-  background-color: var(--custom-black) !important;
-  grid-template-columns: repeat(6, 1fr);
-} */
-
-  /* ******************* page d'acceuil avec le letterize.js ********************** */
-
+  /* ******************* Page d'acc avec letterize *********************** */
+  
   #welcome_page{
 
-    font-size: 5vw;
-
+    font-size: 7vw;
     font-family: "Khula", sans-serif;
-    height: 150vh;
+    height: 100%;;
     letter-spacing: 6px;
     margin: 0;
     line-height: 1.2;
-
     position: absolute;
     top: 0px;
     height: 100% ;
     width: 100% ;
   }
 
+
+  /* ******************* navbar *********************** */
+
+  #navbar{
+  height: 12vh;
+  width: 100%;
+  padding: 0.5%;
+
+
+}
   /* ******************* section one *********************** */
 
   #section_one{
+    height: 100%;
+    width: 100%;
     display: none;
     /* grid-template-columns: 1fr 1fr; */
   }
@@ -44,16 +42,17 @@
   }
 
   #chevron{
+    color: var(--bs-white);
     position: absolute;
-    top: 1.5em;
-    left: 2.5em;
+    top: 5.5em;
+    left: 1em;
   }
 
   #triangle_bot_left_shape{
     position: absolute;
     left: -1000px;
     border-bottom: 80vh solid var(--custom-purple);
-    border-right: 75vh solid transparent;
+    border-right: 60vh solid transparent;
   }
 
   #right{
@@ -64,8 +63,8 @@
 
   #right_desc_about_me{
     color: var(--bs-white);
-    width: 34%;
-    height: 80vh;
+    height: 100%;
+    width: 75%;
     position: absolute;
     left: 1600px;
 
@@ -77,9 +76,11 @@
   }
 
   #right_desc_about_me p{
+    z-index: 2;
     position: relative;
-    right: 85%;
-    font-size: 1.5em;
+    bottom: 13%;
+    right: 65%;
+    font-size: 2.3em;
     /* color: white; */
   }
 
@@ -87,6 +88,7 @@
   /* ******************* section two ************************* */
 
   #section_two{
+    overflow: hidden !important;
     display: none;
     grid-template-columns: 1fr 1fr;
     height: 100%;
@@ -114,7 +116,6 @@
 
 
   #triangle_top_right_shape {
-
         position: absolute;
         left: 76.8%;
         border-top: 85vh solid var(--custom-pink);
@@ -195,7 +196,7 @@ max-height: 180px;
 }
 
   #footer{
-    background-color: var(--custom-black) ;
+    background-color: var(--custom-black);
     display: none;
     position: absolute;
     left: 0;
@@ -203,5 +204,5 @@ max-height: 180px;
     width:100%;
   }
 
->>>>>>> Stashed changes
+
 }
